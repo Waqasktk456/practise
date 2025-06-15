@@ -1,7 +1,7 @@
-const asyncHandler = require('../utils/asyncHandler');
+const asyncHandler = require('..routes/utils/asyncHandler');
 const User = require('../models/User');
 const HealthMetric = require('../models/HealthMetric');
-const generateToken = require('../utils/generateToken');
+const generateToken = require('..routes/utils/generateToken');
 
 const registerUser = asyncHandler(async (req, res) => {
   const { 
