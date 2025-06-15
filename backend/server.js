@@ -15,7 +15,6 @@ app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 app.use(express.json());
 //CI/CD Trigger
 // new commit in backend
-// Define Routes
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/health', require('./routes/healthRoutes'));
 app.use('/api/meals', require('./routes/mealRoutes'));
